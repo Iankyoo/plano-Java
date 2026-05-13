@@ -19,7 +19,7 @@
 ## ☕ Módulo 1A — Core Java
 📅 *1,5 semana*
 
-- [ ] Sintaxe Java e tipos primitivos
+- [x] Sintaxe Java e tipos primitivos
 - [ ] Variáveis e controle de fluxo
 - [ ] Classes e objetos
 - [ ] Encapsulamento
