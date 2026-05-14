@@ -24,7 +24,7 @@
 - [x] Classes e objetos
 - [x] Encapsulamento
 - [x] Herança
-- [ ] Polimorfismo
+- [x] Polimorfismo
 - [ ] Exceptions
 - [ ] Collections Framework
 
