@@ -21,8 +21,8 @@
 
 - [x] Sintaxe Java e tipos primitivos
 - [x] Variáveis e controle de fluxo
-- [ ] Classes e objetos
-- [ ] Encapsulamento
+- [x] Classes e objetos
+- [x] Encapsulamento
 - [ ] Herança
 - [ ] Polimorfismo
 - [ ] Exceptions
