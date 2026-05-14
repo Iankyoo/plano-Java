@@ -20,7 +20,7 @@
 📅 *1,5 semana*
 
 - [x] Sintaxe Java e tipos primitivos
-- [ ] Variáveis e controle de fluxo
+- [x] Variáveis e controle de fluxo
 - [ ] Classes e objetos
 - [ ] Encapsulamento
 - [ ] Herança
