@@ -3,7 +3,7 @@ package Task3;
 public class BankAccount {
     private String accountHolder;
     private int accountNumber;
-    private double balance;
+    protected double balance;
 
     public BankAccount(String accountHolder, int accountNumber){
         this.accountHolder = accountHolder;
