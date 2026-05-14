@@ -23,7 +23,7 @@
 - [x] Variáveis e controle de fluxo
 - [x] Classes e objetos
 - [x] Encapsulamento
-- [ ] Herança
+- [x] Herança
 - [ ] Polimorfismo
 - [ ] Exceptions
 - [ ] Collections Framework
