@@ -25,7 +25,7 @@
 - [x] Encapsulamento
 - [x] Herança
 - [x] Polimorfismo
-- [ ] Exceptions
+- [x] Exceptions
 - [ ] Collections Framework
 
 ---
