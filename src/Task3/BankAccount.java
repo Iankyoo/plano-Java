@@ -26,4 +26,16 @@ public class BankAccount {
     public void displayBalance(){
         System.out.println("Account Holder: " + this.accountHolder + " | Balance: " + this.balance );
     }
+
+    public int getAccountNumber(){
+        return this.accountNumber;
+    }
+
+    public double getBalance(){
+        return this.balance;
+    }
+
+    public String getAccountHolder(){
+        return this.accountHolder;
+    }
 }

@@ -26,7 +26,7 @@
 - [x] Herança
 - [x] Polimorfismo
 - [x] Exceptions
-- [ ] Collections Framework
+- [x] Collections Framework
 
 ---
 
