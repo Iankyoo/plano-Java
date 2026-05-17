@@ -35,7 +35,7 @@
 
 - [x] Maven e estrutura de projetos
 - [ ] IntelliJ IDEA workflow
-- [ ] Debugging
+- [x] Debugging
 - [x] Lombok
 - [ ] application.properties / yaml
 - [ ] Profiles
