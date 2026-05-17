@@ -33,10 +33,10 @@
 ## ⚙️ Módulo Extra — Ecossistema Java
 📅 *3 dias*
 
-- [ ] Maven e estrutura de projetos
+- [x] Maven e estrutura de projetos
 - [ ] IntelliJ IDEA workflow
 - [ ] Debugging
-- [ ] Lombok
+- [x] Lombok
 - [ ] application.properties / yaml
 - [ ] Profiles
 - [ ] Dependency management
