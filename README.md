@@ -46,10 +46,10 @@
 ## 🚀 Módulo 1B — Java Moderno
 📅 *1,5 semana*
 
-- [ ] Interfaces e Abstract classes
-- [ ] Generics
-- [ ] Functional Interfaces
-- [ ] Lambda Expressions
+- [x] Interfaces e Abstract classes
+- [x] Generics
+- [x] Functional Interfaces
+- [x] Lambda Expressions
 - [ ] Streams API
 - [ ] Optional
 
