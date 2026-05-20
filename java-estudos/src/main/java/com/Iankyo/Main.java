@@ -2,6 +2,7 @@ package com.Iankyo;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Optional;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -38,5 +39,25 @@ public class Main {
         BankAccount found = accountsByName.get("Ian");
         System.out.println(found);
 
+        Optional<BankAccount> opt = bank.findAccount(1);
+        opt.ifPresent(a -> a.displayBalance());
+        Optional<BankAccount> optNull = bank.findAccount(99);
+
+        BankAccount acc = optNull.orElse(new BankAccount("default", 0));
+        System.out.println(acc);
+
+        try {
+            BankAccount acc2 = optNull.orElseThrow(
+                    () -> new RuntimeException("Account not found")
+            );
+            System.out.println(acc2);
+        } catch (RuntimeException e){
+            System.out.println(e.getMessage());
+        }
+
+
+        Optional<String> accountNames = opt.map(a -> a.getAccountHolder());
+        accountNames.stream()
+                .forEach(System.out::println);
     }
 }

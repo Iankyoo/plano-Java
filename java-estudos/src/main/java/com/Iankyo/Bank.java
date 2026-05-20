@@ -2,6 +2,7 @@ package com.Iankyo;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class Bank {
     private List<BankAccount> accounts = new ArrayList<>();
@@ -14,13 +15,10 @@ public class Bank {
         accounts.removeIf(account -> account.getAccountNumber() == accountNumber);
     }
 
-    public BankAccount findAccount(int accountNumber){
-        for (BankAccount account: accounts){
-            if (account.getAccountNumber() == accountNumber){
-                return account;
-            }
-        }
-        return null;
+    public Optional<BankAccount> findAccount(int accountNumber) {
+        return accounts.stream()
+                .filter(a -> a.getAccountNumber() == accountNumber)
+                .findFirst();
     }
 
     public void displayAllAccounts(){
