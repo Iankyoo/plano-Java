@@ -50,8 +50,8 @@
 - [x] Generics
 - [x] Functional Interfaces
 - [x] Lambda Expressions
-- [ ] Streams API
-- [ ] Optional
+- [x] Streams API
+- [x] Optional
 
 ### 🛠️ Mini Projeto — CLI Financeira
 - [ ] OOP aplicado
