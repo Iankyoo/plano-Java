@@ -54,11 +54,11 @@
 - [x] Optional
 
 ### 🛠️ Mini Projeto — CLI Financeira
-- [ ] OOP aplicado
-- [ ] Collections
-- [ ] Streams
-- [ ] Exceptions
-- [ ] Generics
+- [x] OOP aplicado
+- [x] Collections
+- [x] Streams
+- [x] Exceptions
+- [x] Generics
 
 ---
 
