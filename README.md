@@ -12,7 +12,7 @@
 
 > Atualize manualmente conforme for avançando nos módulos.
 
-`Módulos concluídos: 0 / 9`
+`Módulos concluídos: 1 / 9`
 
 ---
 
@@ -65,7 +65,7 @@
 ## 🗄️ Módulo 2 — SQL + JDBC + JPA/Hibernate
 📅 *2 semanas*
 
-- [ ] SQL aplicado a backend
+- [x] SQL aplicado a backend
 - [ ] JDBC puro
 - [ ] JPA / Hibernate
 - [ ] Relacionamentos
