@@ -66,7 +66,7 @@
 📅 *2 semanas*
 
 - [x] SQL aplicado a backend
-- [ ] JDBC puro
+- [x] JDBC puro
 - [ ] JPA / Hibernate
 - [ ] Relacionamentos
 - [ ] Lazy vs Eager Loading
