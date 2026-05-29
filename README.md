@@ -67,7 +67,7 @@
 
 - [x] SQL aplicado a backend
 - [x] JDBC puro
-- [ ] JPA / Hibernate
+- [x] JPA / Hibernate
 - [ ] Relacionamentos
 - [ ] Lazy vs Eager Loading
 - [ ] N+1 Problem
