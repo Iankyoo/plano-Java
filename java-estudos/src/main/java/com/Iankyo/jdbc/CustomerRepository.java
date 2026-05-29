@@ -17,8 +17,7 @@ public class CustomerRepository {
             while (rs.next()){
                 System.out.println(
                         rs.getInt("customer_id") + " | " +
-                        rs.getString("name") + " | " +
-                        rs.getString("email")
+                        rs.getString("name")
                 );
             }
 
@@ -38,8 +37,7 @@ public class CustomerRepository {
             while (rs.next()){
                 System.out.println(
                         rs.getInt("customer_id") + " | " +
-                        rs.getString("name") + " | " +
-                        rs.getString("email")
+                        rs.getString("name") + " | "
                 );
             }
         } catch (SQLException e) {
