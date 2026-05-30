@@ -68,11 +68,11 @@
 - [x] SQL aplicado a backend
 - [x] JDBC puro
 - [x] JPA / Hibernate
-- [ ] Relacionamentos
-- [ ] Lazy vs Eager Loading
-- [ ] N+1 Problem
-- [ ] Transações
-- [ ] Mapeamento ORM
+- [x] Relacionamentos
+- [x] Lazy vs Eager Loading
+- [x] N+1 Problem
+- [x] Transações
+- [x] Mapeamento ORM
 
 ---
 
