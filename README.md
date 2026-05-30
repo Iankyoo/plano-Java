@@ -12,7 +12,7 @@
 
 > Atualize manualmente conforme for avançando nos módulos.
 
-`Módulos concluídos: 1 / 9`
+`Módulos concluídos: 2 / 9`
 
 ---
 
