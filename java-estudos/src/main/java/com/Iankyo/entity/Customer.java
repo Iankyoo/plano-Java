@@ -5,6 +5,8 @@ import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Getter
 @Setter
@@ -24,4 +26,6 @@ public class Customer {
     @Column(name = "email", nullable = false, unique = true, length = 150)
     String email;
 
+    @OneToMany(mappedBy = "customer", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private List<Account> accounts = new ArrayList<>();
 }
