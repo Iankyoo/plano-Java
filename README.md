@@ -12,7 +12,7 @@
 
 > Atualize manualmente conforme for avançando nos módulos.
 
-`Módulos concluídos: 1 / 9`
+`Módulos concluídos: 2 / 9`
 
 ---
 
@@ -67,12 +67,12 @@
 
 - [x] SQL aplicado a backend
 - [x] JDBC puro
-- [ ] JPA / Hibernate
-- [ ] Relacionamentos
-- [ ] Lazy vs Eager Loading
-- [ ] N+1 Problem
-- [ ] Transações
-- [ ] Mapeamento ORM
+- [x] JPA / Hibernate
+- [x] Relacionamentos
+- [x] Lazy vs Eager Loading
+- [x] N+1 Problem
+- [x] Transações
+- [x] Mapeamento ORM
 
 ---
 
