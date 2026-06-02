@@ -79,11 +79,11 @@
 ## 🌱 Módulo 3 — Spring Boot Core + Observabilidade
 📅 *3 semanas*
 
-- [ ] IoC e Dependency Injection
-- [ ] Bean lifecycle
-- [ ] Spring MVC
-- [ ] REST APIs
-- [ ] DTOs e mapeamento
+- [x] IoC e Dependency Injection
+- [x] Bean lifecycle
+- [x] Spring MVC
+- [x] REST APIs
+- [x] DTOs e mapeamento
 - [ ] Validação
 - [ ] Exception Handling global
 - [ ] Paginação e filtros
