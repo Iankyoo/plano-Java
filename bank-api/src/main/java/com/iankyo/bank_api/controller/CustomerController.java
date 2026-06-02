@@ -3,6 +3,7 @@ package com.iankyo.bank_api.controller;
 import com.iankyo.bank_api.dto.CreateCustomerRequest;
 import com.iankyo.bank_api.dto.CustomerResponse;
 import com.iankyo.bank_api.service.CustomerService;
+import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -30,7 +31,7 @@ public class CustomerController {
     }
 
     @PostMapping()
-    public ResponseEntity<CustomerResponse> createAccount(@RequestBody CreateCustomerRequest request){
+    public ResponseEntity<CustomerResponse> createAccount(@Valid @RequestBody CreateCustomerRequest request){
         return ResponseEntity.status(HttpStatus.CREATED).body(service.create(request));
     }
 
