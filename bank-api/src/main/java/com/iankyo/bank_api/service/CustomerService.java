@@ -3,6 +3,7 @@ package com.iankyo.bank_api.service;
 import com.iankyo.bank_api.dto.CreateCustomerRequest;
 import com.iankyo.bank_api.dto.CustomerResponse;
 import com.iankyo.bank_api.entity.Customer;
+import com.iankyo.bank_api.exception.CustomerNotFoundException;
 import com.iankyo.bank_api.repository.CustomerRepository;
 import org.springframework.stereotype.Service;
 
@@ -26,7 +27,7 @@ public class CustomerService {
 
     public CustomerResponse findByID(Long id){
         Customer customer = repository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Customer not found"));
+                .orElseThrow(() -> new CustomerNotFoundException(id));
         return new CustomerResponse(customer.getId(),customer.getName(), customer.getEmail());
     }
 
