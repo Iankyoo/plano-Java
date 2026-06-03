@@ -5,6 +5,8 @@ import com.iankyo.bank_api.dto.CustomerResponse;
 import com.iankyo.bank_api.entity.Customer;
 import com.iankyo.bank_api.exception.CustomerNotFoundException;
 import com.iankyo.bank_api.repository.CustomerRepository;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -18,11 +20,14 @@ public class CustomerService {
         this.repository = repository;
     }
 
-    public List<CustomerResponse> findAll(){
-        return repository.findAll()
-                .stream()
-                .map(c -> new CustomerResponse(c.getId(), c.getName(), c.getEmail()))
-                .collect(Collectors.toList());
+    public Page<CustomerResponse> findAll(Pageable pageable){
+        return repository.findAll(pageable)
+                .map(c -> new CustomerResponse(c.getId(), c.getName(), c.getEmail()));
+    }
+
+    public Page<CustomerResponse> findByName(String name, Pageable pageable){
+        return repository.findByNameContainingIgnoreCase(name, pageable)
+                .map(c -> new CustomerResponse(c.getId(),c.getName(),c.getEmail()));
     }
 
     public CustomerResponse findByID(Long id){
@@ -30,6 +35,7 @@ public class CustomerService {
                 .orElseThrow(() -> new CustomerNotFoundException(id));
         return new CustomerResponse(customer.getId(),customer.getName(), customer.getEmail());
     }
+
 
     public CustomerResponse create(CreateCustomerRequest request){
         Customer customer = new Customer();

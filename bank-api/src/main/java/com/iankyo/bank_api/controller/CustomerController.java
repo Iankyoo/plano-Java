@@ -4,6 +4,10 @@ import com.iankyo.bank_api.dto.CreateCustomerRequest;
 import com.iankyo.bank_api.dto.CustomerResponse;
 import com.iankyo.bank_api.service.CustomerService;
 import jakarta.validation.Valid;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -21,8 +25,22 @@ public class CustomerController {
     }
 
     @GetMapping
-    public ResponseEntity<List<CustomerResponse>> findAll(){
-        return ResponseEntity.ok(service.findAll());
+    public ResponseEntity<Page<CustomerResponse>> findAll(
+        @RequestParam(defaultValue = "0") int page,
+        @RequestParam(defaultValue = "10") int size,
+        @RequestParam(defaultValue = "name") String sort){
+
+        Pageable pageable = PageRequest.of(page,size, Sort.by(sort));
+        return ResponseEntity.ok(service.findAll(pageable));
+    }
+
+    @GetMapping("/search")
+    public ResponseEntity<Page<CustomerResponse>> findByName(
+            @RequestParam String name,
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "10") int size){
+        Pageable pageable = PageRequest.of(page, size);
+        return ResponseEntity.ok(service.findByName(name, pageable));
     }
 
     @GetMapping("/{id}")
