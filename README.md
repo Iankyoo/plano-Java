@@ -84,8 +84,8 @@
 - [x] Spring MVC
 - [x] REST APIs
 - [x] DTOs e mapeamento
-- [ ] Validação
-- [ ] Exception Handling global
+- [x] Validação
+- [x] Exception Handling global
 - [ ] Paginação e filtros
 - [ ] Versionamento de API
 - [ ] Spring Data JPA
