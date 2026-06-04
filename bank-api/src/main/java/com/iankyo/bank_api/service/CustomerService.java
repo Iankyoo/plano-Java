@@ -2,6 +2,7 @@ package com.iankyo.bank_api.service;
 
 import com.iankyo.bank_api.dto.CreateCustomerRequest;
 import com.iankyo.bank_api.dto.CustomerResponse;
+import com.iankyo.bank_api.dto.CustomerResponseV2;
 import com.iankyo.bank_api.entity.Customer;
 import com.iankyo.bank_api.exception.CustomerNotFoundException;
 import com.iankyo.bank_api.repository.CustomerRepository;
@@ -47,5 +48,15 @@ public class CustomerService {
 
     public void delete(long id){
         repository.deleteById(id);
+    }
+
+    public Page<CustomerResponseV2> findAllV2(Pageable pageable){
+        return repository.findAll(pageable)
+                .map(c -> new CustomerResponseV2(
+                        c.getId(),
+                        c.getName(),
+                        c.getEmail(),
+                        c.getCreatedAt()
+                ));
     }
 }
