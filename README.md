@@ -86,8 +86,8 @@
 - [x] DTOs e mapeamento
 - [x] Validação
 - [x] Exception Handling global
-- [ ] Paginação e filtros
-- [ ] Versionamento de API
+- [x] Paginação e filtros
+- [x] Versionamento de API
 - [ ] Spring Data JPA
 - [ ] SLF4J + Logback
 - [ ] Spring Actuator
