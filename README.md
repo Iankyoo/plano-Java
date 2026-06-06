@@ -88,9 +88,9 @@
 - [x] Exception Handling global
 - [x] Paginação e filtros
 - [x] Versionamento de API
-- [ ] Spring Data JPA
-- [ ] SLF4J + Logback
-- [ ] Spring Actuator
+- [x] Spring Data JPA
+- [x] SLF4J + Logback
+- [x] Spring Actuator
 
 ### 🛠️ Mini Projeto — API REST Completa
 - [ ] DTOs e validação
