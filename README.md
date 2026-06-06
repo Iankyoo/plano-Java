@@ -10,9 +10,7 @@
 
 ## 📊 Progresso Geral
 
-> Atualize manualmente conforme for avançando nos módulos.
-
-`Módulos concluídos: 2 / 9`
+`Módulos concluídos: 3 / 9`
 
 ---
 
