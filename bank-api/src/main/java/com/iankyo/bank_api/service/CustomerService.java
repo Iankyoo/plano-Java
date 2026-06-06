@@ -6,6 +6,7 @@ import com.iankyo.bank_api.dto.CustomerResponseV2;
 import com.iankyo.bank_api.entity.Customer;
 import com.iankyo.bank_api.exception.CustomerNotFoundException;
 import com.iankyo.bank_api.repository.CustomerRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -13,6 +14,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Slf4j
 @Service
 public class CustomerService {
     private final CustomerRepository repository;
@@ -27,13 +29,19 @@ public class CustomerService {
     }
 
     public Page<CustomerResponse> findByName(String name, Pageable pageable){
+        log.info("Searching customer with name: {}",name );
         return repository.findByNameContainingIgnoreCase(name, pageable)
                 .map(c -> new CustomerResponse(c.getId(),c.getName(),c.getEmail()));
     }
 
     public CustomerResponse findByID(Long id){
+        log.info("Searching customer with id: {}", id);
         Customer customer = repository.findById(id)
-                .orElseThrow(() -> new CustomerNotFoundException(id));
+                .orElseThrow(() -> {
+                    log.warn("Customer not found with id: {}", id);
+                    return new CustomerNotFoundException(id);
+                });
+        log.info("Customer found: {}", customer.getName());
         return new CustomerResponse(customer.getId(),customer.getName(), customer.getEmail());
     }
 
