@@ -91,10 +91,10 @@
 - [x] Spring Actuator
 
 ### 🛠️ Mini Projeto — API REST Completa
-- [ ] DTOs e validação
-- [ ] Logs estruturados
-- [ ] Paginação
-- [ ] Tratamento global de erros
+- [x] DTOs e validação
+- [x] Logs estruturados
+- [x] Paginação
+- [x] Tratamento global de erros
 
 ---
 
