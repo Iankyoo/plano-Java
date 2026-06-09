@@ -32,12 +32,12 @@
 📅 *3 dias*
 
 - [x] Maven e estrutura de projetos
-- [ ] IntelliJ IDEA workflow
+- [x] IntelliJ IDEA workflow
 - [x] Debugging
 - [x] Lombok
-- [ ] application.properties / yaml
+- [x] application.properties / yaml
 - [ ] Profiles
-- [ ] Dependency management
+- [x] Dependency management
 
 ---
 
