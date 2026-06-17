@@ -101,8 +101,8 @@
 ## 🔐 Módulo 4 — Segurança
 📅 *1,5 semana*
 
-- [ ] Spring Security
-- [ ] JWT
+- [x] Spring Security
+- [x] JWT
 - [ ] OAuth2 básico
 - [ ] Autenticação
 - [ ] Autorização
