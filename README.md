@@ -10,7 +10,7 @@
 
 ## 📊 Progresso Geral
 
-`Módulos concluídos: 3 / 9`
+`Módulos concluídos: 4 / 9`
 
 ---
 
@@ -103,11 +103,11 @@
 
 - [x] Spring Security
 - [x] JWT
-- [ ] OAuth2 básico
-- [ ] Autenticação
-- [ ] Autorização
-- [ ] Filters
-- [ ] Segurança em APIs REST
+- [x] OAuth2 básico
+- [x] Autenticação
+- [x] Autorização
+- [x] Filters
+- [x] Segurança em APIs REST
 
 ---
 
